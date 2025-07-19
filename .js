@@ -9,7 +9,6 @@ for (let i = 0; i < gridDimension * gridDimension; i++) {
 }
 
 const gridCells = document.querySelectorAll(".grid-cell");
-//console.log(Array.from(gridCell));
 gridCells.forEach(element => {
     element.addEventListener("mouseenter", (Event) => {
         let target = Event.target;
