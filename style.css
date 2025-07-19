@@ -1,4 +1,7 @@
-
+body {
+    display: flex;
+    flex-direction: column;
+}
 
 .container {
     display: flex;
@@ -13,5 +16,16 @@
 .grid-cell {
     box-sizing: border-box;
     border: 1px solid #ddd;
+}
 
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background-color: skyblue;
 }
