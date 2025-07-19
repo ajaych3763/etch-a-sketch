@@ -10,9 +10,13 @@ for (let i = 0; i < gridDimension * gridDimension; i++) {
 
 const gridCells = document.querySelectorAll(".grid-cell");
 gridCells.forEach(element => {
+    let randomRed = ((Math.random().toFixed(3) * 1000) % 256);
+    let randomGreen = ((Math.random().toFixed(3) * 1000) % 256);
+    let randomBlue = ((Math.random().toFixed(3) * 1000) % 256);
     element.addEventListener("mouseenter", (Event) => {
         let target = Event.target;
-        target.style.backgroundColor = "red";
+        target.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+        target.style.opacity = `${Number(target.style.opacity) + 0.1}`; 
     })
 });
 
@@ -31,9 +35,13 @@ resizeBtn.addEventListener('click', () => {
     }
     const newGridCells = document.querySelectorAll(".grid-cell");
     newGridCells.forEach(element => {
+        let randomRed = ((Math.random().toFixed(3) * 1000) % 256);
+        let randomGreen = ((Math.random().toFixed(3) * 1000) % 256);
+        let randomBlue = ((Math.random().toFixed(3) * 1000) % 256);
         element.addEventListener("mouseenter", (Event) => {
             let target = Event.target;
-            target.style.backgroundColor = "red";
+            target.style.backgroundColor = `rgb(${randomRed}, ${randomGreen}, ${randomBlue})`;
+            target.style.opacity = `${Number(target.style.opacity) + 0.1}`; 
         })
     });
 });
