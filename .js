@@ -13,6 +13,6 @@ const gridCells = document.querySelectorAll(".grid-cell");
 gridCells.forEach(element => {
     element.addEventListener("mouseenter", (Event) => {
         let target = Event.target;
-        target.style.backgroundColor = "blue";
+        target.style.backgroundColor = "red";
     })
 });
