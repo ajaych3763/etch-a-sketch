@@ -3,7 +3,7 @@
 .container {
     display: flex;
     flex-wrap: wrap;
-    height: 700px;
+    height: 600px;
     width: 900px;
     margin: auto;
     border: 2px solid #444;
@@ -11,7 +11,6 @@
 
 
 .grid-cell {
-    display: flex;
     box-sizing: border-box;
     border: 1px solid #ddd;
 
